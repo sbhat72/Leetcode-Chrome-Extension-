@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Leetcode Helper",
+  "version": "1.0",
+  "description": "Leetcode helper that gives user hints and full code if needed!",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Images/Logo.png",
+      "48": "Images/Logo.png",
+      "128": "Images/Logo.png"
+    }
+  },
+  "icons":{
+    "16": "Images/Logo.png",
+    "48":"Images/Logo.png",
+    "128":"Images/Logo.png"
+  }
+}
