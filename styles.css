@@ -1,0 +1,172 @@
+body {
+  width: 400px;
+  height: 800px;
+  margin: 0;
+  background: #1E1E1E;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animation */
+@keyframes slide-down {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0%); }
+}
+
+@keyframes slide-up{
+    from {
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+.deactivatePop{
+    animation: slide-up 0.5s linear;;
+}
+/* Popup Container */
+.activatePop {
+  background: url(Images/file\ \(2\).svg) no-repeat center/cover;
+  width: 100%;
+  height: 40%;
+  border: 2px solid #3A3A3A; /* Darker border for contrast */
+  border-radius: 10px;
+  animation: slide-down 1s linear;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo */
+.popupLogo {
+  display: block;
+  margin: 10px auto 0; /* Centered */
+  width: 50px;
+  height: 50px;
+}
+
+/* Text Elements */
+.IntroText {
+  margin-top: 5px;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+#line1 {
+  color: #F37055;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#line2 {
+  color: #FDCB58;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Input Field - Enhanced */
+input {
+  
+  display: block;
+  margin: 30px auto 0;
+  width: 90%;
+  max-width: 350px;
+  padding: 12px 16px;
+  font-size: 14px;
+  
+  /* Border Styling */
+  border: 2px solid #4D6AD6; /* Blue border */
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  
+  /* Text */
+  color: #2E2E2E;
+  box-shadow: 0 2px 8px rgba(77, 106, 214, 0.2);
+  
+  /* Transition */
+  transition: all 0.3s ease;
+}
+
+/* Input Focus State */
+input:focus {
+  outline: none;
+  border-color: #F37055; /* Orange when active */
+  box-shadow: 0 0 0 3px rgba(243, 112, 85, 0.2);
+}
+
+/* Placeholder */
+input::placeholder {
+  color: #4D6AD6;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.boxLabel{
+    position: absolute;
+    color: #FFFFFF;
+    top: 205px;
+    left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.submitButton{
+    padding: 8px 16px;
+    max-width: 100px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #596D48;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.inputBoxChat{
+    position: fixed;
+    padding: 10px 15px;
+    max-width: 300px;
+    border-radius: 10px;
+    background-color:  #343541;
+    font-size: 15px;
+    cursor: auto;
+    box-shadow: 0 0 0 2px rgba(77, 106, 214, 0.1);
+    top: 505px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.sendImg{
+    position: fixed;
+    top: 525px;
+    width: 40px;
+    height: 60px;
+    left: 88%;
+    cursor: pointer;
+
+}
+
+.backButton{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 88%;
+  cursor: pointer;
+}
+
+.APIResponse{
+  display: block;
+  
+  margin-top: 60px;
+  max-width: 90%;
+  color: white;
+  font-size: 10px;
+  margin-left: 10px;
+  font-weight: lighter;
+  max-height: calc(100vh - 150px); 
+  
+}
+
