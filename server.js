@@ -7,7 +7,7 @@ dotenv.config();
 
 const ai = new GoogleGenAI({
     apiKey: process.env.API_KEY
-});  // uses process.env["OPENAI_API_KEY"] or .env
+});  
 
 const app = express();
 
